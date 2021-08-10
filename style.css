@@ -1,0 +1,82 @@
+.photoviewer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 550px;
+    width: 800px;
+    position: relative; 
+    left: 50%;
+    transform: translateX(-50%);
+    background: grey;
+    flex-direction: column;
+}
+#photo-title {
+    margin-right: 350px;
+    margin-bottom: 50px;
+    text-decoration: underline;
+    text-transform: uppercase;
+    position: absolute;
+    top: 20px;
+    left: 100px;
+}
+
+#photo-description {
+    margin-right: 580px;
+    font-size: 15px;
+    position: absolute;
+    bottom: 50px;
+    left: 100px;
+}
+
+#photo {
+    max-height: 350px;
+    max-width: 500px;
+    margin-top: 120px;
+    margin-bottom: 100px;
+}
+button {
+    position: absolute;
+    background-image: url(./arrow.svg);
+    height: 22px; 
+    width: 13px;
+    border: none;
+    border-radius: 15% 0 0 15%;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.left {
+    top: 250px;
+    left: 15px;
+}
+.right {
+    top: 250px;
+    right: 15px;
+    transform: rotate(180deg);
+}
+
+.thumbnailsection {
+    display: flex;
+    justify-content: center;
+    width: 800px;
+    height: 80px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    background: grey;
+    margin-top: 40px;
+    position: relative; 
+    left: 50%;
+    transform: translateX(-50%);
+}
+.thumbnail {
+    height: 60px;
+    width: 80px;
+    margin: 10px;
+    background: red;
+}
+.thumbnail:hover {
+    cursor: pointer;
+    box-shadow: 0 0 0 2px black;
+}
